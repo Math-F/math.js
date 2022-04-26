@@ -58,3 +58,9 @@ function Area (tipoArea,Medidas){
     return res;
 
 }
+function seqFibo(){
+
+}
+function seqLucas(){
+    
+}
