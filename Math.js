@@ -32,5 +32,29 @@ Medidas[baseMenor, baseMaior, altura];
 Medidas[diagonalMenor, diagonalMaior];
 */
 function Area (tipoArea,Medidas){
+    let Tipo = ['triangulo','retangulo', 'circulo', 'trapezio', 'losango'];
+    let res = 0;
+    if (tipoArea === Tipo[0]){
+
+        res = (Medidas[0] * Medidas[1])/2; //Area triangulo
+
+    }else if (tipoArea === Tipo[1]){
+
+        res = Medidas[0] * Medidas ;//Area retangulo
+        
+    }else if (tipoArea === Tipo[2]){
+
+        res = Math.pow(Medidas[0],2)*PI;//Area circulo
+        
+    }else if (tipoArea === Tipo[3]){
+
+        res = ((Medidas[0] + Medidas[1])*Medidas[2])/2;//Area trapezio
+        
+    }else if (tipoArea === Tipo[4]){
+
+        res = (Medidas[0] * Medidas[1])/2;//Area losango
+        
+    }
+    return res;
 
 }
