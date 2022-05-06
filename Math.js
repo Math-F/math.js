@@ -58,9 +58,21 @@ function Area (tipoArea,Medidas){
     return res;
 
 }
-function seqFibo(){
-    
+function seqFibo(to){
+    let x = 1;
+    let y = 0;
+    let z = 0;
+
+    for(let i = 1; i< to; i++){
+        
+        z += x + y;
+        y = x; 
+        x = z;  // erro no calculo
+    }
+    return z
 }
 function seqLucas(){
 
 }
+j = seqFibo(4);
+console.log(j);
